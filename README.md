@@ -32,6 +32,18 @@ A aplicação vai subir em **http://127.0.0.1:8000/**. Utilize **http://127.0.0.
 O banco de dados (arquivo `cinema.db`) é criado automaticamente na primeira
 execução, já com as tabelas. Para começar do zero, basta apagar ele.
 
+### Alternativa sem uv
+
+Quem preferir usar um ambiente virtual do Python com `pip`:
+
+```bash
+cd "Aula 3"
+python3 -m venv .venv
+source .venv/bin/activate      # no Windows: .venv\Scripts\activate
+pip install "fastapi[standard]" sqlalchemy
+fastapi dev main.py
+```
+
 ## Endpoints criados
 Todos os endpoints criados para essa aula estão listados abaixo.
 
